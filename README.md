@@ -53,30 +53,32 @@ PAGINA_WEB-->>-ADMIN:VizualizaAsistencia()
 classDiagram
     Place <|-- User
     Place <|-- DateAttendance
-    Place : +String Id
-    Place : +String NamePlace
-    Place : +String Street
-    Place : +String Department
-    Place : +String City
-    Place : +String CP
-    Place : +String NameChurch
+    Place : +string Id
+    Place : +string NamePlace
+    Place : +string Street
+    Place : +string Department
+    Place : +string City
+    Place : +string CP
+    Place : +string NameChurch
     Place : +number NumPersons
     Place : +Date DateAttendance
     class User{
-        +String Id
-        -String Name
-        +String NameChurch
+        +string Id
+        -string Name
+        +string NameChurch
         +number Attendance
-        +String Status
-        +String Email
+        +string Status
+        +string Email
         +number Phone1
         +number Phone2
-        *String[] FingerPrint
+        +string[] FingerPrint
+        +boolean IsAdmin
+        +string passwordHash
     }
     class DateAttendance{
-        +String Id
+        +string Id
         +Date DateAttendance
-        +String NamePlace
+        +string NamePlace
     }
 ```
 
