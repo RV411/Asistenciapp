@@ -52,32 +52,32 @@ PAGINA_WEB-->>-ADMIN:VizualizaAsistencia()
 ```mermaid
 classDiagram
     Place <|-- User
-    Place <|-- DateAttendance
+    Place <|-- dateAttendance
     Place : +string Id
-    Place : +string NamePlace
+    Place : +string nameChurch
     Place : +string Street
     Place : +string Department
     Place : +string City
-    Place : +string CP
-    Place : +string NameChurch
-    Place : +number NumPersons
-    Place : +Date DateAttendance
+    Place : +string cp
+    Place : +number numPersons
+    Place : +Date dateAttendance
     class User{
         +string Id
         -string Name
-        +string NameChurch
+        +string nameChurch
         +number Attendance
         +string Status
         +string Email
         +number Phone1
         +number Phone2
-        +string[] FingerPrint
-        +boolean IsAdmin
+        +string[] fingerPrint
+        +boolean isAdmin
+        +Date dateCreated
         +string passwordHash
     }
-    class DateAttendance{
+    class dateAttendance{
         +string Id
-        +Date DateAttendance
+        +Date dateAttendance
         +string NamePlace
     }
 ```

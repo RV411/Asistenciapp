@@ -1,1 +1,68 @@
-<h1>HOla</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"></script>
+    <title>Asistencias</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Asistencia</a>
+        <ul>
+            <li><a href="#" class="activate">Inicio</a></li>
+            <li><a href="#">Iglesias</a></li>
+            <li><a href="#">Reuniones</a></li>
+            <li><a href="#">Administrador</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <h2 id="texto_titulo"><span>Bienvenido</span> <br> seas</h2>
+        <img src="../assets/img/bird1.png" id="bird1">
+        <img src="../assets/img/bird2.png" id="bird2">
+        <img src="../assets/img/forest.png" id="forest">        
+        <a href="" id="btn_init">Asistencias</a>
+        <img src="../assets/img/rocks.png" id="rocks">
+        <img src="../assets/img/water.png" id="water">
+
+    </section>
+    <div class="seccion1">
+        <h2>Como se manejan las asistencias</h2>
+        <p> 3 Retardos es lo mismo que una falta</p>
+        <p> 3 faltas baja definitiva del programa</p>
+        <p> Con todas las asistencias del programa <br> 
+            se dara mas privilegios en los asientos</p>
+    </div>
+
+    <footer>
+        <p class="copyright">© Creado por <a href="#" target="_blank" rel="noopener noreferrer">Adan Rodriguez</a></p>
+    </footer>
+
+    <script>
+        let texto_titulo=document.getElementById('texto_titulo');
+        let bird1=document.getElementById('bird1');
+        let bird2=document.getElementById('bird2');
+        let forest=document.getElementById('forest');
+        let btn_init=document.getElementById('text');
+        let rocks=document.getElementById('rocks');
+        let water=document.getElementById('water');
+        let header=document.getElementById('header');
+
+        window.addEventListener('scroll',function(){
+            let value=window.scrollY;
+
+            texto_titulo.style.top=50+value*-0.5+'%';
+            bird1.style.top=value*-1.5+'px';
+            bird1.style.left=value*2+'px';
+            bird2.style.top=value*-1.5+'px';
+            bird2.style.left=value*-5+'px';
+            btn_init.style.marginTop=value*1.5+'px';
+            rocks.style.top=value*-0.12+'px';
+            water.style.top=value*0.25+'px';
+            header.style.top=value*0.5+'px';
+        })
+    </script>
+</body>
+</html>

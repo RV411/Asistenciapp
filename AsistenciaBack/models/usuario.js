@@ -5,7 +5,7 @@ const usuarioSchema=mongoose.Schema({
         type:String,
         require:true,
     },
-    namechurch:{
+    nameChurch:{
         type:String,
         require:true,  
     },
@@ -29,7 +29,7 @@ const usuarioSchema=mongoose.Schema({
         type:String,
         default:'',
     },
-    fingerprint:[{
+    fingerPrint:[{
         type:String
     }],
     isAdmin:{
