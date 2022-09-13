@@ -73,7 +73,7 @@ section #texto_titulo{
     text-align: center;
     line-height: 0.55em;
     font-family: 'Rancho',cursive;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
 
 }
 
@@ -87,6 +87,17 @@ section #texto_titulo span{
 section img{
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img #bird1,
+section img #bird2{
+    position: absolute;
+    top: 100px;
     left: 0;
     width: 100%;
     height: 100%;

@@ -7,7 +7,7 @@
     <script type="text/javascript"></script>
     <title>Asistencias</title>
 </head>
-<body>
+<body onload="load();">
     <header id="header">
         <a href="#" class="logo">Asistencia</a>
         <ul>
@@ -19,7 +19,7 @@
     </header>
 
     <section>
-        <h2 id="texto_titulo"><span>Bienvenido</span> <br> seas</h2>
+        <h2 id="texto_titulo">Bienvenido<br><span>seas</span></h2>
         <img src="../assets/img/bird1.png" id="bird1">
         <img src="../assets/img/bird2.png" id="bird2">
         <img src="../assets/img/forest.png" id="forest">        
@@ -41,17 +41,18 @@
     </footer>
 
     <script>
-        let texto_titulo=document.getElementById('texto_titulo');
-        let bird1=document.getElementById('bird1');
-        let bird2=document.getElementById('bird2');
-        let forest=document.getElementById('forest');
-        let btn_init=document.getElementById('text');
-        let rocks=document.getElementById('rocks');
-        let water=document.getElementById('water');
-        let header=document.getElementById('header');
+        var texto_titulo=document.getElementById("texto_titulo");
+        var bird1=document.getElementById("bird1");
+        var bird2=document.getElementById("bird2");
+        var forest=document.getElementById("forest");
+        var btn_init=document.getElementById("text");
+        var rocks=document.getElementById("rocks");
+        var water=document.getElementById("water");
+        var header=document.getElementById("header");
 
+        
         window.addEventListener('scroll',function(){
-            let value=window.scrollY;
+            var value=window.scrollY;
 
             texto_titulo.style.top=50+value*-0.5+'%';
             bird1.style.top=value*-1.5+'px';
