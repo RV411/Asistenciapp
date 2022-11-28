@@ -1,6 +1,3 @@
 AsistenciaApp/.gitignore
-AsistenciaApp/tsconfig.app.json
-AsistenciaApp/tsconfig.spec.json
-AsistenciaApp/.browserslistrc
-AsistenciaApp/.editorconfig
+
 node_modules/
