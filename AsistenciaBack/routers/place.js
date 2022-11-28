@@ -29,9 +29,7 @@ router.post('/register', async (req,res)=>{
         street: req.body.street,
         apartment: req.body.apartment,
         cp: req.body.cp,
-        city: req.body.city,
-        dateAttendance: req.body.dateAttendance,
-        numPersons: req.body.numPersons,
+        city: req.body.city
     })
     place = await place.save();
 
@@ -50,8 +48,6 @@ router.put('/:id',async (req, res)=> {
             apartment: req.body.apartment,
             cp: req.body.cp,
             city: req.body.city,
-            dateAttendance: req.body.dateAttendance,
-            numPersons: req.body.numPersons,
         },
         { new: true}
     )

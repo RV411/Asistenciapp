@@ -21,14 +21,6 @@ const placeSchema=mongoose.Schema({
         type: String,
         default: ''
     },
-    dateAttendance:{
-        type:Date,
-        default:Date.now
-    },
-    numPersons:{
-        type:Number,
-        default:0
-    },
 });
 
 placeSchema.virtual('id').get(function () {

@@ -6,10 +6,11 @@ const dateAttendanceSchema=mongoose.Schema({
         type:Date,
         default:Date.now
     },
-    nameChurch: {
-        type: String,
-        required: true,
-    }
+    place: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Place',
+        required:true
+    }    
 });
 
 placeSchema.virtual('id').get(function () {

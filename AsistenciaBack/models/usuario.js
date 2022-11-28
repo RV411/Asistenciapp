@@ -5,9 +5,10 @@ const usuarioSchema=mongoose.Schema({
         type:String,
         require:true,
     },
-    nameChurch:{
-        type:String,
-        require:true,  
+    place:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Place',
+        required:true
     },
     attendance:{
         type:Number,
@@ -56,3 +57,4 @@ usuarioSchema.set('toJSON',{
 })
 
 exports.Usuario=mongoose.model('Usuario',usuarioSchema);
+exports.usuarioSchema = usuarioSchema;
